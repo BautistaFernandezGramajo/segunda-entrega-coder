@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Lexend_Tera';
+    src: url(../assets/fonts/Lexend_Tera/LexendTera-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Lexend_Tera';
+}
+
+/* navbar styles */
+
+header {
+    border-bottom: 6px solid #06A3DF;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%286, 163, 223, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar .navbar-toggler {
+    border-color: #06A3DF;
+    border-width: 2px;
+}
+
+
+.logo-a {
+    color: white !important;
+    font-family: 'Lexend_Tera', sans-serif;
+    font-weight: normal;
+}
+
+.logo-span {
+    color: #06A3DF !important;
+}
+
+.logo-img {
+    transform: scale(50%) translateY(-5px);
+
+}
+
+.navbar-bg-custom {
+    background-color: black;
+}
+
+.ul-color-custom a {
+    color: #06A3DF !important;
+    white-space: nowrap;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ul-color-custom a:hover {
+    color: #fff !important;
+}
+
+.ul-color-custom a.active {
+    color: #06C5DF !important;
+}
+
+.navbar-nav {
+    font-family: 'Lexend_Tera', sans-serif;
+    font-weight: normal;
+}
+
+
+/*index main*/
+
+main {
+    height: 600px;
+    overflow: auto;
+    background-image: url(../assets/images/background_main.png);
+}
+
+.index-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.index-main a {
+    color: black;
+    text-decoration: none;
+    padding: 22px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #06C5DF;
+}
+
+.index-main h2,
+h3 {
+    color: #06A3DF;
+}
+
+.index-main span,
+p {
+    color: white;
+}
+
+.index-main h2,
+span,
+p,
+a {
+    display: inline-block;
+    margin: 11px;
+}
+
+/* sobre nosotros main*/
+
+.nosotros {
+    text-align: center;
+}
+
+.certificacion h3,
+p {
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* clientes main */
+
+.container-clientes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-clientes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.titulo-clientes {
+    display: flex;
+    justify-content: center;
+    color: #06C5DF;
+    margin-top: 70px;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.cliente {
+    display: inline-block;
+    text-align: center;
+    border: 3px solid #06C5DF;
+    border-radius: 7px;
+    padding: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.cliente h3 {
+    color: #06C5DF;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #06C5DF;
+    margin-bottom: 30px;
+}
+
+/*main contactos*/
+
+.container-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-contacto h2,
+p {
+    text-align: center;
+}
+
+.container-contacto-info {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    grid-column: span 1;
+}
+
+input,
+textarea {
+    grid-column: span 2;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.consulta {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.consulta h2,
+label {
+    color: #06A3DF;
+    font-size: 48px;
+    text-align: center;
+}
+
+.consulta input {
+    margin: 10px
+}
+
+.consulta label {
+    font-size: 20px;
+    text-align: left;
+}
+
+.consulta input,
+textarea {
+    border-radius: 7px;
+    text-align: left;
+    background-color: black;
+    border: 3px solid #06C5DF;
+    color: #06C5DF;
+    font-family: 'Lexend_Tera';
+}
+
+
+
+/* footer styles */
+.footer-custom {
+    background-color: black;
+    border-top: 6px solid #06A3DF;
+}
+
+
+.footer-custom span {
+    color: #06A3DF !important;
+}
